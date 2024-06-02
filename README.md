@@ -1,8 +1,35 @@
+<img src="https://github.com/pranshurastogi/LIT-Beat/assets/12568291/8f538d1c-c50a-48de-b288-5c43136c1135" alt="Project Logo" width="150"/>
+
 # Secure Document Sharing and Signing with Lit Protocol
+
+<img width="1437" alt="Screenshot 2024-06-02 at 4 22 08 PM" src="https://github.com/pranshurastogi/LIT-Beat/assets/12568291/95b9ca3a-9e11-4240-a3d8-44b945bc4183">
+
 
 ## Overview
 
 This project demonstrates a secure document sharing and signing application using the Lit Protocol. The application allows users to encrypt documents, share them securely, and enable conditional signing based on specific conditions such as having a minimum Ethereum balance.
+
+## How We Used Lit Protocol
+
+The Secure Document Sharing and Signing application leverages the Lit Protocol for:
+
+- **Document Encryption**: Encrypting documents using Lit Protocol's encryption capabilities.
+- **Document Decryption**: Decrypting documents with Lit Protocol's decryption capabilities.
+- **Conditional Signing**: Signing documents conditionally based on user criteria (e.g., Ethereum balance).
+
+### Diagram
+
+```mermaid
+graph TD
+    A[User] -->|Uploads Document| B[Encrypt Document]
+    B --> C[Lit Protocol SDK]
+    C --> D[Store Encrypted Document]
+    D --> E[Grant Access]
+    E --> F[Decrypt Document]
+    F --> G[Conditional Signing]
+    G --> H[Verify Signatures]
+    H --> A
+```
 
 ## Features
 
